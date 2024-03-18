@@ -16,7 +16,8 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                       'start': '#FF8938',
+                        'end': '#F00',
                     }
                 }
             }
@@ -43,8 +44,8 @@
 
     <header class="container mx-auto">
 
-        <div class="hero ">
-            <div class="hero-content flex-col lg:flex-row">
+        <div class="my-20">
+            <div class="flex justify-between items-center flex-col lg:flex-row">
              
               <div>
                 <h1 class="text-7xl font-extrabold">
@@ -52,10 +53,13 @@
                     tea time at The 
                     <br>Tea House</h1>
                 <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-                <button class="btn btn-primary">Explore More</button>
+                <button class="btn bg-gradient-to-r from-start to-end text-white">
+                    Explore More
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                </button>
               </div>
               <div>
-                <img class="max-w-sm" src="./images/banner.png">
+                <img class="" src="./images/banner.png">
                 <div class="-mt-16 flex gap-4 drop-shadow-lg rounded-xl bg-white p-5 w-64">
                     <i class="fa-solid fa-star text-4xl text-amber-400"></i>
                     <div>
@@ -153,7 +157,7 @@
 
         <!-- super clients section -->
 
-        <section class="my-24 flex flex-col lg:flex-row rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00]  px-16 py-24 gap-12">
+        <section class="my-24 flex flex-col lg:flex-row rounded-xl bg-gradient-to-r from-start to-end  px-16 py-24 gap-12">
             <div class="flex items-center lg:pr-32">
               <div class="space-y-5">
                 <h2 class="text-5xl font-extrabold text-white">Meet Our Super  <br> Clients</h2>
@@ -198,11 +202,104 @@
 
         </section>
 
+        <section class="my-24">
+            <!-- News & Events section -->
+            <h2 class="text-5xl font-extrabold text-center">News & Events</h2>
+            <p class="font-medium mt-5 text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 mt-14">
+        
+                    <!-- news card one -->
+                    <div class="card lg:w-96 bg-base-100 shadow-xl ">
+                        <figure><img src="./images/news-1.png" alt="" /></figure>
+                        <div class="card-body">
+                            <p>Feb 05, 2027</p>
+                          <h2 class="card-title">Collecting 8 points for discount</h2>
+                          <p>There are many variations of passages of Lorem Ipsum available.</p>
+                          <div class="">
+                            <button class="btn btn-link text-black no-underline">Learn More</button>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- news card two -->
+                    <div class="card lg:w-96 bg-base-100 shadow-xl">
+                        <figure><img src="./images/news-2.png" alt="" /></figure>
+                        <div class="card-body">
+                            <p>Feb 05, 2027</p>
+                          <h2 class="card-title">Collecting 8 points for discount</h2>
+                          <p>There are many variations of passages of Lorem Ipsum available.</p>
+                          <div class="">
+                            <button class="btn btn-link text-black no-underline">Learn More</button>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- news card three -->
+                    <div class="card lg:w-96 bg-base-100 shadow-xl">
+                        <figure><img src="./images/news-3.png" alt="" /></figure>
+                        <div class="card-body">
+                            <p>Feb 05, 2027</p>
+                          <h2 class="card-title">Collecting 8 points for discount</h2>
+                          <p>There are many variations of passages of Lorem Ipsum available.</p>
+                          <div class="">
+                            <button class="btn btn-link text-black no-underline">Learn More</button>
+                          </div>
+                        </div>
+                      </div>
+
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        
-    </footer>
+    <footer class="px-4 lg:px-48 py-10 bg-base-200 text-base-content">
+        <div class="flex flrx-col lg:justify-between my-24">
+            <img src="./images/cup.png" alt="">
+            <p>
+                <span>Ready to get strated?</span>
+                <button class="btn bg-gradient-to-r from-start to-end text-white">Get Started</button>
+            </p>
+        </div>
+        <div class="footer ">
+            <nav>
+                <h6 class="footer-title">Services</h6> 
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+              </nav> 
+              <nav>
+                <h6 class="footer-title">Company</h6> 
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+              </nav> 
+              <nav>
+                <h6 class="footer-title">Legal</h6> 
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+              </nav> 
+              <form>
+                <h6 class="footer-title">Newsletter</h6> 
+                <fieldset class="form-control w-80">
+                  <label class="label">
+                    <span class="label-text">Enter your email address</span>
+                  </label> 
+                  <div class="join">
+                    <input type="text" placeholder="username@site.com" class="py-2 bg-transparent border-b-2 border-black outline-none" /> 
+                    <button class="btn bg-gradient-to-r from-start to-end join-item">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                  </div>
+                </fieldset>
+              </form>
+        </div>
+
+        <aside class="mt-10 text-center m">
+            <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+          </aside>
+      </footer>
 
 </body>
 
